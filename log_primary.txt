@@ -1,0 +1,41 @@
+[ec2-user@ip-10-1-11-211 ~]$ mysql -h udacity.ctzpcjuo9ett.us-east-1.rds.amazonaws.com -u admin -p
+Enter password:
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MySQL connection id is 75
+Server version: 8.0.20 Source distribution
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MySQL [(none)]> use udacity;
+Database changed
+MySQL [udacity]> CREATE TABLE INVESTORS (id INT, name VARCHAR(20), email VARCHAR(20));
+Query OK, 0 rows affected (0.38 sec)
+
+MySQL [udacity]> SHOW TABLES;
++-------------------+
+| Tables_in_udacity |
++-------------------+
+| INVESTORS         |
++-------------------+
+1 row in set (0.01 sec)
+
+MySQL [udacity]> INSERT INTO INVESTORS (id,name,email) VALUES(1,"vick","vick@gmail.com");
+Query OK, 1 row affected (0.02 sec)
+
+MySQL [udacity]> INSERT INTO INVESTORS (id,name,email) VALUES(2,"john","john@gmail.com");
+Query OK, 1 row affected (0.02 sec)
+
+MySQL [udacity]> INSERT INTO INVESTORS (id,name,email) VALUES(3,"josh","josh@gmail.com");
+Query OK, 1 row affected (0.02 sec)
+
+MySQL [udacity]> SELECT * FROM INVESTORS;
++------+------+----------------+
+| id   | name | email          |
++------+------+----------------+
+|    1 | vick | vick@gmail.com |
+|    2 | john | john@gmail.com |
+|    3 | josh | josh@gmail.com |
++------+------+----------------+
+3 rows in set (0.01 sec)
