@@ -40,12 +40,12 @@ Current database: udacity
 Query OK, 1 row affected (0.06 sec)
 
 mysql> SELECT * FROM INVESTORS;
-+------+----------+------------------+
-| id   | name     | email            |
-+------+----------+------------------+
-|    1 | veeru    | veeru@gmail.com  |
-|    2 | john     | john@gmail.com   |
-|    3 | king     | king@gmail.com   |
-|    1 | santhosh | santhosh@abc.com |
-+------+----------+------------------+
++------+----------+--------------------+
+| id   | name     | email              |
++------+----------+--------------------+
+|    1 | vick     | vick@gmail.com     |
+|    2 | john     | john@gmail.com     |
+|    3 | josh     | josh@gmail.com     |
+|    1 | smartest | smartest@gmail.com |
++------+----------+--------------------+
 4 rows in set (0.00 sec)
